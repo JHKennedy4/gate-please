@@ -3,6 +3,9 @@ from twilio.twiml.voice_response import VoiceResponse
 
 app = Flask(__name__)
 
+@app.route("/", methods=['GET'])
+def hello():
+    return "<html>Hello, world.</html>"
 
 @app.route("/call", methods=['GET', 'POST'])
 def gate_please():
