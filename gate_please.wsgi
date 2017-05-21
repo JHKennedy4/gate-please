@@ -1,1 +1,1 @@
-from yourapplication import app as application
+from yourapplication import gate_plase as application
